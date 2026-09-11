@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>AddBGone</title>
+  </head>
+  <body>
+    <header>
+      <h1>AddBGone</h1>
+      <span id="host"></span>
+    </header>
+
+    <div class="counts">
+      <div class="count"><b id="c-overlays">0</b><span>overlays</span></div>
+      <div class="count"><b id="c-popups">0</b><span>popups</span></div>
+      <div class="count"><b id="c-closed">0</b><span>tabs closed</span></div>
+    </div>
+
+    <div class="actions">
+      <button id="scan">Scan now</button>
+      <button id="restore" class="ghost">Undo removals</button>
+    </div>
+    <div class="actions">
+      <button id="allow" class="ghost">Allow next popup</button>
+      <button id="reopen" class="ghost" disabled>Reopen closed tab</button>
+    </div>
+
+    <ul class="toggles">
+      <li>
+        <label><input type="checkbox" id="enabled" /> <span>Extension on</span></label>
+      </li>
+      <li>
+        <label><input type="checkbox" id="siteOn" /> <span>Enabled on <i id="hostInline">this site</i></span></label>
+      </li>
+      <li>
+        <label><input type="checkbox" id="removeOverlays" /> <span>Remove overlay click-shields</span></label>
+      </li>
+      <li>
+        <label><input type="checkbox" id="blockPopups" /> <span>Block popups &amp; popunders</span></label>
+      </li>
+      <li>
+        <label><input type="checkbox" id="autoCloseTabs" /> <span>Auto-close popunder tabs</span></label>
+      </li>
+    </ul>
+
+    <footer>Alt+Shift+X rescans the page.</footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
