@@ -1,5 +1,5 @@
 /**
- * AddBGone - service worker.
+ * Peel - service worker.
  *
  * Owns settings, per-tab counters, the toolbar badge, and the popunder-tab
  * killer. Tab closing is deliberately narrow: a tab is only closed if the

@@ -1,5 +1,5 @@
 /**
- * AddBGone detector probe.
+ * Peel detector probe.
  *
  * Paste this into the DevTools console on a page that is stealing your clicks.
  * It does not modify the page - it reports what the real detector would see, so
@@ -128,7 +128,7 @@
   }
   scored.sort((a, b) => b.score - a.score);
 
-  console.group('%cAddBGone probe', 'color:#f97316;font-weight:bold');
+  console.group('%cPeel probe', 'color:#f97316;font-weight:bold');
   console.log('viewport', vw + 'x' + vh, '| candidates', pool.size);
   console.log('%cplayers', 'font-weight:bold', players.map(brief));
   console.log('%ccovers (sitting on the player)', 'font-weight:bold');

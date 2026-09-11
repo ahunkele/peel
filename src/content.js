@@ -1,5 +1,5 @@
 /**
- * AddBGone - ISOLATED world.
+ * Peel - ISOLATED world.
  *
  * Two jobs:
  *   1. Find and neutralise "click shields" - the invisible full-bleed elements
@@ -14,13 +14,13 @@
 (() => {
   'use strict';
 
-  const FLAG = '__addbgone_content__';
+  const FLAG = '__peel_content__';
   if (window[FLAG]) return;
   window[FLAG] = true;
 
-  const EV_REPORT = '__addbgone_report__';
-  const EV_CONFIG = '__addbgone_config__';
-  const MARK = 'data-addbgone';
+  const EV_REPORT = '__peel_report__';
+  const EV_CONFIG = '__peel_config__';
+  const MARK = 'data-peel';
 
   const SCORE_THRESHOLD = 6;
 
@@ -455,7 +455,7 @@
       });
       document.body.appendChild(toastEl);
     }
-    toastEl.textContent = `AddBGone: ${text}`;
+    toastEl.textContent = `Peel: ${text}`;
     toastEl.style.opacity = '1';
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {

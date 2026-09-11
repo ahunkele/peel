@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "AddBGone",
+  "name": "Peel",
   "version": "0.1.0",
   "description": "Removes invisible click-shield overlays and blocks the popunder ads that fire when you click a video player.",
   "permissions": ["storage", "tabs"],
@@ -28,7 +28,7 @@
   ],
   "action": {
     "default_popup": "popup/popup.html",
-    "default_title": "AddBGone",
+    "default_title": "Peel",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",

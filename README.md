@@ -1,4 +1,4 @@
-# AddBGone
+# Peel
 
 A Chrome extension (Manifest V3) for the specific annoyance on free sports-stream
 sites: an invisible element is layered over the video player so your first click
@@ -49,7 +49,7 @@ are never touched, and the popup offers "Reopen closed tab" as an undo.
 
 1. Open `chrome://extensions`.
 2. Turn on **Developer mode** (top right).
-3. **Load unpacked** → select this folder (`addbgone`).
+3. **Load unpacked** → select this folder (`peel`).
 4. Pin the extension so you can see the badge count.
 
 After editing any file, hit the reload arrow on the extension card, then reload
@@ -79,8 +79,8 @@ popup/              toolbar UI
 icons/
 ```
 
-The two content scripts talk to each other over `CustomEvent` (`__addbgone_config__`
-down, `__addbgone_report__` up) with JSON string payloads, since the MAIN world
+The two content scripts talk to each other over `CustomEvent` (`__peel_config__`
+down, `__peel_report__` up) with JSON string payloads, since the MAIN world
 has no access to `chrome.*` APIs and object identity does not cross world
 boundaries cleanly.
 

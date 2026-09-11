@@ -1,5 +1,5 @@
 /**
- * AddBGone - MAIN world hooks.
+ * Peel - MAIN world hooks.
  *
  * Runs at document_start in the page's own JavaScript realm (before any page
  * script), so it can take ownership of the APIs that popunder ads rely on:
@@ -17,12 +17,12 @@
 (() => {
   'use strict';
 
-  const FLAG = '__addbgone_main__';
+  const FLAG = '__peel_main__';
   if (window[FLAG]) return;
   Object.defineProperty(window, FLAG, { value: true });
 
-  const EV_REPORT = '__addbgone_report__';
-  const EV_CONFIG = '__addbgone_config__';
+  const EV_REPORT = '__peel_report__';
+  const EV_CONFIG = '__peel_config__';
 
   const cfg = {
     enabled: true,
